@@ -26,4 +26,17 @@ public class Voiture
         }
         return vitesseCourante;
     }
+    void tourner(boolean droite, int angle)
+    {
+        String droiteOuGauche;
+        if (droite)
+        {
+            droiteOuGauche = "droite";
+        }
+        else
+        {
+            droiteOuGauche = "gauche";
+        }
+        System.out.println("Je tourne "+droiteOuGauche+" à un angle de "+angle);
+    }
 }

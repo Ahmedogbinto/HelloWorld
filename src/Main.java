@@ -6,18 +6,9 @@ public class Main {
         voitureDeAhmed.automatique = true;
         voitureDeAhmed.couleur = "Vert";
 
-        System.out.println("la voiture de Ahmed est " + voitureDeAhmed.couleur + " et elle a " + voitureDeAhmed.nbPortes + " portes");
 
-        voitureDeAhmed.klaxonner();
 
-        voitureDeAhmed.acceler();
-        System.out.println(voitureDeAhmed.acceler()+" à l'heure");
-
-        int nouvelleVitesse = voitureDeAhmed.acceler();
-        System.out.println("Nouvelle vitesse d'accélération: "+nouvelleVitesse+ " km/h");
-
-        int nouvelleVitesseCourante = voitureDeAhmed.passerVitesse(true);
-
+        voitureDeAhmed.tourner(false,45);
 
     }
 }
