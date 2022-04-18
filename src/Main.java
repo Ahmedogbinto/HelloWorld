@@ -9,5 +9,6 @@ public class Main
         voitureDeAhmed.couleur="Vert";
 
         System.out.println("la voiture de Ahmed est "+voitureDeAhmed.couleur+" et elle a "+voitureDeAhmed.nbPortes+" portes");
+        voitureDeAhmed.klaxonner();
     }
 }
