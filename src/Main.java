@@ -6,7 +6,14 @@ public class Main {
         voitureDeAhmed.automatique = true;
         voitureDeAhmed.couleur = "Vert";
 
-        voitureDeAhmed.tourner(false,45);
+        Voiture voitureDeJerome = new Voiture();
+
+        boolean egalOuNon = voitureDeAhmed == voitureDeJerome;
+        System.out.println(egalOuNon);
+
+        int nouvelleVitesse = voitureDeAhmed.acceler(50);
+        System.out.println("La nouvelle vitesse est de "+nouvelleVitesse);
+
 
     }
 }

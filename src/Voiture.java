@@ -4,6 +4,7 @@ public class Voiture
     boolean automatique;
     String couleur;
     int vitesseCourante;
+    int vitesse;
 
     void klaxonner()
     {
@@ -14,7 +15,14 @@ public class Voiture
         System.out.println("J'accélère");
         return 100;
     }
-    int passerVitesse(boolean enVitesse)
+    int acceler(int vitesse)
+    {
+        System.out.println("J'accélère");
+        this.vitesse= this.vitesse+vitesse;
+        return this.vitesse;
+    }
+
+   /* int passerVitesse(boolean enVitesse)
     {
         if (enVitesse)
         {
@@ -26,6 +34,7 @@ public class Voiture
         }
         return vitesseCourante;
     }
+
     void tourner(boolean droite, int angle)
     {
         String droiteOuGauche;
@@ -38,5 +47,5 @@ public class Voiture
             droiteOuGauche = "gauche";
         }
         System.out.println("Je tourne "+droiteOuGauche+" à un angle de "+angle);
-    }
+    }*/
 }
