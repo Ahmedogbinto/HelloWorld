@@ -6,8 +6,6 @@ public class Main {
         voitureDeAhmed.automatique = true;
         voitureDeAhmed.couleur = "Vert";
 
-
-
         voitureDeAhmed.tourner(false,45);
 
     }
