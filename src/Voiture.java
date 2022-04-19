@@ -5,6 +5,7 @@ public class Voiture
     String couleur;
     int vitesseCourante;
     int vitesse;
+    Moteur  moteur;
 
     void klaxonner()
     {
@@ -22,7 +23,7 @@ public class Voiture
         return this.vitesse;
     }
 
-   /* int passerVitesse(boolean enVitesse)
+   int passerVitesse(boolean enVitesse)
     {
         if (enVitesse)
         {
@@ -47,5 +48,5 @@ public class Voiture
             droiteOuGauche = "gauche";
         }
         System.out.println("Je tourne "+droiteOuGauche+" à un angle de "+angle);
-    }*/
+    }
 }
