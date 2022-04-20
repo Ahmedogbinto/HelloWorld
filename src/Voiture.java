@@ -8,7 +8,7 @@ public class Voiture
     Moteur  moteur;
     static int nbroue=4;
 
-    void klaxonner()
+    static void klaxonner()
     {
         System.out.println("tutu!!!!!!");
     }
@@ -37,7 +37,7 @@ public class Voiture
         return vitesseCourante;
     }
 
-    void tourner(boolean droite, int angle)
+    static void tourner(boolean droite, int angle)
     {
         String droiteOuGauche;
         if (droite)
@@ -48,8 +48,9 @@ public class Voiture
         {
             droiteOuGauche = "gauche";
         }
-        System.out.println("Je tourne "+droiteOuGauche+" à un angle de "+angle);
+        System.out.println("Les "+Voiture.nbroue+"roues  tournent a "+droiteOuGauche+" à un angle de "+angle);
     }
+
     Ville transporter(Passager passager, Ville villeDeDepart)
     {
         System.out.println("Je transporte un passager qui S'appelle "+passager.prenom+" " +passager.nom);

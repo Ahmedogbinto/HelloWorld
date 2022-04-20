@@ -26,10 +26,10 @@ public class Main {
         passager.nom = "Dupond";
         passager.prenom = "Vincent";
 
-        /*Ville ville = new Ville();
+        Ville ville = new Ville();
         ville.nom ="Calavi";
        Ville destination = voitureDeAhmed.transporter(passager, ville);
-       System.out.println("Le passager est arrivé dans la ville de "+destination.nom);*/
+       System.out.println("Le passager est arrivé dans la ville de "+destination.nom);
 
        System.out.println("Le nombre de roue de la voiture de Ahmed est "+voitureDeAhmed.nbroue);
         System.out.println("Le nombre de roue de la voiture de Jerome est "+voitureDeJerome.nbroue);
@@ -38,6 +38,9 @@ public class Main {
         System.out.println("Le nombre de roue de la voiture de Ahmed est "+voitureDeAhmed.nbroue);
         System.out.println("Le nombre de roue de la voiture de Jerome est "+voitureDeJerome.nbroue);
         System.out.println("Le nombre de roue d'une voiture est de "+Voiture.nbroue);
+
+        Voiture.klaxonner();
+        Voiture.tourner(true, 50);
 
 
 
