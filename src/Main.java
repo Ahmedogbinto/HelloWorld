@@ -22,6 +22,17 @@ public class Main {
         System.out.println("Le nombre de cylindre de la voiture de Jerome est "+voitureDeJerome.moteur.cylindre);
         System.out.println("Le nombre de cylindre de la voiture de Ahmed est "+voitureDeJerome.moteur.cylindre);
 
+        Passager passager = new Passager();
+        passager.nom = "Dupond";
+        passager.prenom = "Vincent";
+
+        Ville ville = new Ville();
+        ville.nom ="Calavi";
+       Ville destination = voitureDeAhmed.transporter(passager, ville);
+       System.out.println("Le passager est arrivé dans la ville de "+destination.nom);
+
+
+
 
 
 

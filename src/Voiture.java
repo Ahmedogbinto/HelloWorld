@@ -49,4 +49,13 @@ public class Voiture
         }
         System.out.println("Je tourne "+droiteOuGauche+" à un angle de "+angle);
     }
+    Ville transporter(Passager passager, Ville villeDeDepart)
+    {
+        System.out.println("Je transporte un passager qui S'appelle "+passager.prenom+" " +passager.nom);
+        System.out.println("Le passager est parti de la ville de "+villeDeDepart.nom);
+
+        Ville villeDeDestination = new Ville();
+        villeDeDestination.nom ="Godomey";
+        return villeDeDestination;
+    }
 }
