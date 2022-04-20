@@ -6,6 +6,7 @@ public class Voiture
     int vitesseCourante;
     int vitesse;
     Moteur  moteur;
+    static int nbroue=4;
 
     void klaxonner()
     {
