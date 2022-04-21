@@ -6,9 +6,9 @@ public class Voiture extends VehiculeAMoteur
     int vitesseCourante;
 
     String couleur;
-
-    Voiture()
+    Voiture(Moteur moteur)
     {
+        super(moteur);
         System.out.println("Une voiture est en construction sans parametre");
     }
     Voiture(String couleur)
@@ -17,11 +17,6 @@ public class Voiture extends VehiculeAMoteur
         System.out.println("Une voiture est en construction avec couleur");
     }
 
-    Voiture(Moteur moteur)
-    {
-        this.moteur=moteur;
-        System.out.println("Une voiture est en construction avec le moteur");
-    }
     Voiture(String carburation, int nbCylindre)
     {
         Moteur moteur = new Moteur();

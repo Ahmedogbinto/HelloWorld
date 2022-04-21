@@ -3,6 +3,16 @@ public class VehiculeAMoteur
     Moteur  moteur;
     int vitesse;
 
+    VehiculeAMoteur()
+    {
+        System.out.println("Un vehicule a moteur est construit");
+    }
+    VehiculeAMoteur(Moteur moteur)
+    {
+        this.moteur=moteur;
+        System.out.println("Une voiture est en construction avec le moteur");
+    }
+
     int acceler()
     {
         System.out.println("J'accélère");
