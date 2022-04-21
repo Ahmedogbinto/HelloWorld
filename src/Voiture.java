@@ -1,4 +1,4 @@
-public class Voiture extends VehiculeAMoteur
+public class Voiture extends VehiculeAMoteur implements Vidangeable
 {
     static int nbroue=4;
     int nbPortes=5;
@@ -23,6 +23,10 @@ public class Voiture extends VehiculeAMoteur
         moteur.carburation = carburation;
         moteur.nbCylindre = nbCylindre;
         this.moteur = moteur;
+    }
+
+    public Voiture() {
+
     }
 
     static void tourner(boolean droite, int angle)
@@ -73,4 +77,9 @@ public class Voiture extends VehiculeAMoteur
         return villeDeDestination;
     }
 
+    @Override
+    public void vidanger()
+    {
+        System.out.println("Devosser le bouchon sous la cullasse et qttendre aue ca coule");
+    }
 }
