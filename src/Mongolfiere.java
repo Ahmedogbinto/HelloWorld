@@ -8,6 +8,11 @@ public class Mongolfiere implements Amarable
         nbCordes=nbCordes+vitesseDuVent/100;
         return nbCordes;
     }
+
+    @Override
+    public int combienDeCordes(int vitesseDuVent) {
+        return 0;
+    }
 }
 
 
