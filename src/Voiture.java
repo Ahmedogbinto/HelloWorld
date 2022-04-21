@@ -1,12 +1,12 @@
-public class Voiture
+public class Voiture extends VehiculeAMoteur
 {
     static int nbroue=4;
     int nbPortes=5;
     boolean automatique;
     int vitesseCourante;
-    int vitesse;
+
     String couleur;
-    Moteur  moteur;
+
     Voiture()
     {
         System.out.println("Une voiture est en construction sans parametre");
@@ -47,11 +47,7 @@ public class Voiture
     {
         System.out.println("tutu!!!!!!");
     }
-    int acceler()
-    {
-        System.out.println("J'accélère");
-        return 100;
-    }
+
     int acceler(int vitesse)
     {
         System.out.println("J'accélère");
@@ -71,13 +67,15 @@ public class Voiture
         }
         return vitesseCourante;
     }
+
     Ville transporter(Passager passager, Ville villeDeDepart)
     {
-        System.out.println("Je transporte un passager qui S'appelle "+passager.prenom+" " +passager.nom);
+        System.out.println("la voiture transporte un passager qui se nommerait "+passager.prenom+" " +passager.nom);
         System.out.println("Le passager est parti de la ville de "+villeDeDepart.nom);
 
         Ville villeDeDestination = new Ville();
         villeDeDestination.nom ="Godomey";
         return villeDeDestination;
     }
+
 }
