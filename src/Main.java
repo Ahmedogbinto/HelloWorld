@@ -9,7 +9,7 @@ public class Main {
 
         Float f3 = f.floatValue();
         int i2 = i.intValue();
-        
+
         float f4 = Float.parseFloat("14.6");
         boolean b = Boolean.parseBoolean("True");
 
