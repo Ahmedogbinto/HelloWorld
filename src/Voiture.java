@@ -1,15 +1,13 @@
-public class Voiture extends VehiculeAMoteur implements Vidangeable
+public class Voiture extends Vehicule implements Vidangeable
 {
     static int nbroue=4;
     int nbPortes=5;
     boolean automatique;
     int vitesseCourante;
-
     String couleur;
-    Voiture(Moteur moteur)
+
+    Voiture()
     {
-        super(moteur);
-        System.out.println("Une voiture est en construction sans parametre");
     }
     Voiture(String couleur)
     {
@@ -22,11 +20,6 @@ public class Voiture extends VehiculeAMoteur implements Vidangeable
         Moteur moteur = new Moteur();
         moteur.carburation = carburation;
         moteur.nbCylindre = nbCylindre;
-        this.moteur = moteur;
-    }
-
-    public Voiture() {
-
     }
 
     static void tourner(boolean droite, int angle)
@@ -42,16 +35,12 @@ public class Voiture extends VehiculeAMoteur implements Vidangeable
         }
         System.out.println("Les "+Voiture.nbroue+"roues  tournent a "+droiteOuGauche+" à un angle de "+angle);
     }
-    static void klaxonner()
-    {
-        System.out.println("tutu!!!!!!");
-    }
 
     int acceler(int vitesse)
     {
         System.out.println("J'accélère");
-        this.vitesse= this.vitesse+vitesse;
-        return this.vitesse;
+        vitesse= vitesse+vitesse;
+        return vitesse;
     }
 
    int passerVitesse(boolean enVitesse)
@@ -81,5 +70,10 @@ public class Voiture extends VehiculeAMoteur implements Vidangeable
     public void vidanger()
     {
         System.out.println("Devosser le bouchon sous la cullasse et qttendre aue ca coule");
+    }
+
+    @Override
+    void klaxonner() {
+        System.out.println("La voiture fait Tutu!!!");
     }
 }

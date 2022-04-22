@@ -4,8 +4,8 @@ public class Main {
     {
 
       Voiture peugot206 = new Voiture();
-      VehiculeAMoteur peugeot307 = new Voiture();
+
       Vidangeable peugeot508 = new Voiture();
-      
+
     }
 }
