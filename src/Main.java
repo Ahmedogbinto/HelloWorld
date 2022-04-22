@@ -1,11 +1,15 @@
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
+        System.out.println("HelloWord");
+        Scanner sc = new Scanner(System.in);
+        int entierSuivant = sc.nextInt();
 
-      Voiture peugot206 = new Voiture();
+        System.out.println("la ligne suivante est "+entierSuivant);
 
-      Vidangeable peugeot508 = new Voiture();
 
     }
 }
+
