@@ -3,7 +3,7 @@ public class Voiture extends Vehicule implements Vidangeable
     static int nbroue=4;
     int nbPortes=5;
     boolean automatique;
-    int vitesseCourante;
+    Integer vitesseCourante;
     String couleur;
 
     Voiture()
