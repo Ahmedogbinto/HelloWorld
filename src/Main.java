@@ -4,17 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Integer i = new Integer(12);
-        Float f = new Float(12.6f);
 
-        Float f3 = f.floatValue();
-        int i2 = i.intValue();
-
-        float f4 = Float.parseFloat("14.6");
-        boolean b = Boolean.parseBoolean("True");
 
         Voiture peugeot206 = new Voiture();
-        peugeot206.vitesseCourante = new Integer(0);
+        peugeot206.typeBoite = TypeBoiteVitesse.SEMI_AUTO;
+
+        System.out.println("Le type de ma boite est de "+peugeot206.typeBoite.nomTypeBoite);
+        System.out.println("Le numero de ma boite de vitess est de "+peugeot206.typeBoite.ordinal());
+        TypeBoiteVitesse semiAuto = TypeBoiteVitesse.valueOf("SEMI_AUTO");
+        System.out.println(" La boite recuperer par le biais de la chaine de caractere est "+semiAuto.nomTypeBoite);
+
+
 
 
     }
