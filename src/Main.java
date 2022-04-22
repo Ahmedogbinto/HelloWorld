@@ -1,44 +1,24 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        Voiture voitureDeAhmed = new Voiture();
-        voitureDeAhmed.nbPortes = 3;
-        voitureDeAhmed.automatique = true;
-        voitureDeAhmed.couleur = "Vert";
 
+        Integer i = new Integer(12);
+        Float f = new Float(12.6f);
 
+        Float f3 = f.floatValue();
+        int i2 = i.intValue();
+        
+        float f4 = Float.parseFloat("14.6");
+        boolean b = Boolean.parseBoolean("True");
 
-        Voiture voitureDeJerome = new Voiture();
-        voitureDeJerome.nbPortes = 5;
-        voitureDeJerome.automatique = true;
-        Moteur moteur = new Moteur();
-        moteur.carburation = "diesel";
-        moteur.cylindre = 6;
-        voitureDeJerome.moteur = moteur;
-
-        voitureDeAhmed.moteur = moteur;
-        voitureDeJerome.moteur.cylindre = 8;
-
-        System.out.println("Le nombre de cylindre de la voiture de Jerome est "+voitureDeJerome.moteur.cylindre);
-        System.out.println("Le nombre de cylindre de la voiture de Ahmed est "+voitureDeJerome.moteur.cylindre);
-
-        Passager passager = new Passager();
-        passager.nom = "Dupond";
-        passager.prenom = "Vincent";
-
-        Ville ville = new Ville();
-        ville.nom ="Calavi";
-       Ville destination = voitureDeAhmed.transporter(passager, ville);
-       System.out.println("Le passager est arrivé dans la ville de "+destination.nom);
-
-
-
-
-
-
-
-
+        Voiture peugeot206 = new Voiture();
+        peugeot206.vitesseCourante = new Integer(0);
 
 
     }
+
+
 }
+
