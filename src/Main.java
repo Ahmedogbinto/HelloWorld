@@ -9,10 +9,16 @@ public class Main {
         Voiture peugeot206 = new Voiture();
         peugeot206.typeBoite = TypeBoiteVitesse.SEMI_AUTO;
 
-        System.out.println("Le type de ma boite est de "+peugeot206.typeBoite.nomTypeBoite);
-        System.out.println("Le numero de ma boite de vitess est de "+peugeot206.typeBoite.ordinal());
-        TypeBoiteVitesse semiAuto = TypeBoiteVitesse.valueOf("SEMI_AUTO");
-        System.out.println(" La boite recuperer par le biais de la chaine de caractere est "+semiAuto.nomTypeBoite);
+       int[] tableauDeInt = new int[5];
+       char[] tableauDeChar = new char[5];
+       Voiture[] tableauDeVoiture = new Voiture[5];
+
+       tableauDeInt[1]=15;
+       tableauDeInt[4]=16;
+       System.out.println("Le deuxieme element du tableau des entiers est"+tableauDeInt[1]);
+       System.out.println("La longueur du tableau est"+tableauDeInt.length);
+
+
 
 
 
