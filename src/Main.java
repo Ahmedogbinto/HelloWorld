@@ -4,19 +4,26 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-
         Voiture peugeot206 = new Voiture();
-        peugeot206.typeBoite = TypeBoiteVitesse.SEMI_AUTO;
 
-       int[] tableauDeInt = new int[5];
-       char[] tableauDeChar = new char[5];
-       Voiture[] tableauDeVoiture = new Voiture[5];
 
-       tableauDeInt[1]=15;
-       tableauDeInt[4]=16;
-       System.out.println("Le deuxieme element du tableau des entiers est"+tableauDeInt[1]);
-       System.out.println("La longueur du tableau est"+tableauDeInt.length);
+        Passager passager = new Passager();
+        passager .nom ="Dupond";
+        passager.prenom="Michel";
+
+        Ville depart = new Ville();
+        depart.nom="Aukland";
+
+        Ville etape1 = new Ville();
+        etape1.nom = "Taupo";
+
+        Ville etape2 = new Ville();
+        etape2.nom = "wellington";
+
+        Ville etape3 = new Ville();
+        etape3.nom = "hallmington";
+
+        peugeot206.transporter(passager, depart, etape1, etape2, etape3);
 
 
 

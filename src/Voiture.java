@@ -57,10 +57,18 @@ public class Voiture extends Vehicule implements Vidangeable
         return vitesseCourante;
     }
 
-    Ville transporter(Passager passager, Ville villeDeDepart)
+    Ville transporter(Passager passager, Ville villeDeDepart, Ville...villeEtapes)
     {
         System.out.println("la voiture transporte un passager qui se nommerait "+passager.prenom+" " +passager.nom);
         System.out.println("Le passager est parti de la ville de "+villeDeDepart.nom);
+
+        System.out.println("La premiere ville etape est "+villeEtapes[0].nom);
+        System.out.println("La deuxieme ville etape est "+villeEtapes[1].nom);
+        System.out.println("La troisieme ville etape est "+villeEtapes[2].nom);
+        System.out.println("La taille du tableau est "+villeEtapes.length);
+
+
+
 
         Ville villeDeDestination = new Ville();
         villeDeDestination.nom ="Godomey";
