@@ -1,23 +1,27 @@
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
         Voiture peugeot206 = new Voiture();
+        Voiture peugeot207 = new Voiture();
+
         peugeot206.couleur="rouge";
 
-        List list = new ArrayList();
-        list.add(peugeot206);
-        list.add(3);
-        list.add(peugeot206);
+        Set<Voiture> set = new HashSet();
+        set.add(peugeot206);
+        set.add(peugeot207);
+        set.add(peugeot206);
 
-        list.remove(peugeot206);
-        Object o =  list.get(0);
-        System.out.println("Lobjet a lindex 0 est "+o);
+        for (Voiture voiture: set) {
+            System.out.println(voiture.couleur);
+            set.remove(peugeot206);
+        }
+
+
+
 
 
 
