@@ -1,15 +1,25 @@
+
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        int[][] tableauEntier = new int[3][5];
-        tableauEntier [0][1]=12;
-        for (int col=0; col<tableauEntier.length;col++){
-            for(int ligne=0;ligne<tableauEntier[col].length;ligne++)
-                System.out.println("Lelement contenu a la position "+col+" "+ligne+ " est "+tableauEntier[col][ligne]);
-        }
+        Voiture peugeot206 = new Voiture();
+        peugeot206.couleur="rouge";
+
+        List list = new ArrayList();
+        list.add(peugeot206);
+        list.add(3);
+        list.add(peugeot206);
+
+        list.remove(peugeot206);
+        Object o =  list.get(0);
+        System.out.println("Lobjet a lindex 0 est "+o);
+
+
 
 
 
@@ -22,4 +32,5 @@ public class Main {
 
 
 }
+
 
