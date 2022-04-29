@@ -17,9 +17,13 @@ public class Main {
 
         for (Voiture voiture: set) {
             System.out.println(voiture.couleur);
-            set.remove(peugeot206);
         }
 
+        Iterator<Voiture> it=set.iterator();
+        while (it.hasNext()){
+            Voiture v = it.next();
+            System.out.println(v.couleur);
+        }
 
 
 
