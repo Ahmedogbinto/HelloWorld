@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Voiture extends Vehicule implements Vidangeable
 {
     static int nbroue=4;
@@ -5,6 +7,20 @@ public class Voiture extends Vehicule implements Vidangeable
     TypeBoiteVitesse typeBoite;
     boolean automatique;
     Integer vitesseCourante;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Voiture)) return false;
+        Voiture voiture = (Voiture) o;
+        return nbPortes == voiture.nbPortes;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nbPortes);
+    }
+
     String couleur;
 
     Voiture()
