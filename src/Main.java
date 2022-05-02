@@ -5,26 +5,26 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Voiture peugeot206 = new Voiture();
         Voiture peugeot207 = new Voiture();
+        peugeot207.couleur= "Rouge";
 
-        peugeot206.couleur="rouge";
+        Voiture peugeot206 = new Voiture();
+        peugeot206.couleur= "Vert";
 
-        Set<Voiture> set = new HashSet();
-        set.add(peugeot206);
-        set.add(peugeot207);
-        set.add(peugeot206);
+        Voiture peugeot307 = new Voiture();
+        peugeot307.couleur= "Blanche";
 
-        for (Voiture voiture: set) {
-            System.out.println(voiture.couleur);
+
+        List<Carre> listeCarre = new ArrayList();
+        listeCarre.add (new Carre(101));
+        listeCarre.add (new Carre(184));
+        listeCarre.add (new Carre(46));
+        listeCarre.add (new Carre(21));
+
+        Collections.sort(listeCarre);
+        for (Carre carre:listeCarre){
+            System.out.print(carre.cote);
         }
-
-        Iterator<Voiture> it=set.iterator();
-        while (it.hasNext()){
-            Voiture v = it.next();
-            System.out.println(v.couleur);
-        }
-
 
 
 
