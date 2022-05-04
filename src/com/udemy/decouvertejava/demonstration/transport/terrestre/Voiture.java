@@ -1,12 +1,10 @@
 
 package com.udemy.decouvertejava.demonstration.transport.terrestre;
 
-import com.udemy.decouvertejava.demonstration.Vidangeable;
-import com.udemy.decouvertejava.demonstration.Ville;
 import com.udemy.decouvertejava.demonstration.transport.Moteur;
 import com.udemy.decouvertejava.demonstration.transport.Passager;
 import com.udemy.decouvertejava.demonstration.transport.TypeBoiteVitesse;
-
+import com.udemy.decouvertejava.demonstration.transport.Vehicule;
 
 import java.util.Objects;
 

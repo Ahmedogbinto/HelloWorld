@@ -2,7 +2,7 @@ package com.udemy.decouvertejava.demonstration.transport;
 
 
 
-import com.udemy.decouvertejava.demonstration.Ville;
+
 public class VehiculeAMoteur
 {
     public Moteur moteur;
