@@ -11,7 +11,7 @@ import java.util.Objects;
 public class Voiture extends Vehicule implements Vidangeable
 {
     static int nbroue=4;
-    int nbPortes=5;
+    static int nbPortes=5;
     TypeBoiteVitesse typeBoite;
     boolean automatique;
     Integer vitesseCourante;
@@ -33,7 +33,7 @@ public class Voiture extends Vehicule implements Vidangeable
 
     public Voiture()
     {
-
+      super(new Moteur());
     }
     Voiture(String couleur)
     {
@@ -105,7 +105,7 @@ public class Voiture extends Vehicule implements Vidangeable
 
     public void vidanger()
     {
-        System.out.println("Devosser le bouchon sous la cullasse et qttendre aue ca coule");
+        System.out.println("Devisser le bouchon sous la cullasse et qttendre aue ca coule");
     }
 
 

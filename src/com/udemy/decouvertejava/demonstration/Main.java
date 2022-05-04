@@ -10,6 +10,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        System.out.println(" Le nombre Pi vaut "+Math.PI);
+
         Voiture peugeot207 = new Voiture();
         peugeot207.couleur= "Rouge";
 
