@@ -1,6 +1,7 @@
 package com.udemy.decouvertejava.demonstration;
 
 import com.udemy.decouvertejava.demonstration.transport.terrestre.Voiture;
+import com.udemy.decouvertejava.demonstration.transport.UsineDassemblage;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,17 +11,20 @@ public class Main {
 
     public static void main(String[] args) {
 
+      UsineDassemblage uav = new UsineDassemblage();
+      uav.assembler();
+
 
         System.out.println(" Le nombre Pi vaut "+Math.PI);
 
         Voiture peugeot207 = new Voiture();
-        peugeot207.couleur= "Rouge";
+        peugeot207.setCouleur("Rouge");
 
         Voiture peugeot206 = new Voiture();
-        peugeot206.couleur= "Vert";
+        peugeot206.setCouleur("Rouge");
 
         Voiture peugeot307 = new Voiture();
-        peugeot307.couleur= "Blanche";
+        peugeot307.setCouleur("Rouge");
 
 
         List<Carre> listeCarre = new ArrayList();

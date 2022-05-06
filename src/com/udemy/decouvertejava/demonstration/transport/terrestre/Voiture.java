@@ -8,15 +8,73 @@ import com.udemy.decouvertejava.demonstration.transport.Vehicule;
 
 import java.util.Objects;
 
-public class Voiture extends Vehicule implements Vidangeable
+public class Voiture extends Vehicule implements com.udemy.decouvertejava.demonstration.Vidangeable
 {
     static int nbroue=4;
+    /**
+     *
+     */
     static int nbPortes=5;
-    TypeBoiteVitesse typeBoite;
+    private TypeBoiteVitesse typeBoite;
     boolean automatique;
-    Integer vitesseCourante;
-    public String couleur;
+    private Integer vitesseCourante;
+    private String couleur;
+    private String immatriculation;
 
+
+
+    public static int getNbPortes() {
+        return nbPortes;
+    }
+
+    public static void setNbPortes(int nbPortes) {
+        Voiture.nbPortes = nbPortes;
+    }
+
+    public com.udemy.decouvertejava.demonstration.transport.TypeBoiteVitesse getTypeBoite() {
+        return typeBoite;
+    }
+
+    public void setTypeBoite(com.udemy.decouvertejava.demonstration.transport.TypeBoiteVitesse typeBoite) {
+        this.typeBoite = typeBoite;
+    }
+
+    public boolean isAutomatique() {
+        return automatique;
+    }
+
+    public void setAutomatique(boolean automatique) {
+        this.automatique = automatique;
+    }
+
+    public Integer getVitesseCourante() {
+        return vitesseCourante;
+    }
+
+    public void setVitesseCourante(Integer vitesseCourante) {
+        this.vitesseCourante = vitesseCourante;
+    }
+
+    public String getCouleur() {
+        return couleur;
+    }
+
+    public void setCouleur(String couleur) {
+        this.couleur = couleur;
+    }
+
+    public String getImmatriculation() {
+        return immatriculation;
+    }
+    public void immatriculation(String numeroImmmatriculation) throws NombreDeCaractereInvalidExecption/*,VoitureDejaImmatriculeeException*/{
+        if (numeroImmmatriculation.length() !=9) {
+            throw new NombreDeCaractereInvalidExecption("Le numero immatriculation" +numeroImmmatriculation+" ne comporte pas le nombre de caractere attenduy");
+        }
+       /*if(this.immatriculation != null){
+
+        }*/
+        this.immatriculation = numeroImmmatriculation;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,6 +95,9 @@ public class Voiture extends Vehicule implements Vidangeable
     }
     Voiture(String couleur)
     {
+        /**
+         *
+         */
         this();
         this.couleur=couleur;
         System.out.println("Une voiture est en construction avec couleur");
@@ -44,6 +105,9 @@ public class Voiture extends Vehicule implements Vidangeable
 
     Voiture(String carburation, int nbCylindre)
     {
+        /**
+         *
+         */
         Moteur moteur = new Moteur();
         moteur.carburation = carburation;
         moteur.nbCylindre = nbCylindre;
@@ -52,6 +116,9 @@ public class Voiture extends Vehicule implements Vidangeable
 
     static void tourner(boolean droite, int angle)
     {
+        /**
+         *
+         */
         String droiteOuGauche;
         if (droite)
         {
@@ -84,7 +151,7 @@ public class Voiture extends Vehicule implements Vidangeable
         return vitesseCourante;
     }
 
-    public Ville transporter(Passager passager, Ville villeDeDepart, Ville...villeEtapes)
+    public com.udemy.decouvertejava.demonstration.Ville transporter(Passager passager, com.udemy.decouvertejava.demonstration.Ville villeDeDepart, com.udemy.decouvertejava.demonstration.Ville...villeEtapes)
     {
         System.out.println("la voiture transporte un passager qui se nommerait "+passager.prenom+" " +passager.nom);
         System.out.println("Le passager est parti de la ville de "+villeDeDepart.nom);
@@ -97,7 +164,7 @@ public class Voiture extends Vehicule implements Vidangeable
 
 
 
-        Ville villeDeDestination = new Ville();
+        com.udemy.decouvertejava.demonstration.Ville villeDeDestination = new com.udemy.decouvertejava.demonstration.Ville();
         villeDeDestination.nom ="Godomey";
         return villeDeDestination;
     }
@@ -105,6 +172,9 @@ public class Voiture extends Vehicule implements Vidangeable
 
     public void vidanger()
     {
+        /**
+         *
+         */
         System.out.println("Devisser le bouchon sous la cullasse et qttendre aue ca coule");
     }
 
