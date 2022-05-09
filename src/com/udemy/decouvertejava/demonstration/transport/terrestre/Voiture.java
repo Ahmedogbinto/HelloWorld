@@ -5,7 +5,7 @@ import com.udemy.decouvertejava.demonstration.transport.Moteur;
 import com.udemy.decouvertejava.demonstration.transport.Passager;
 import com.udemy.decouvertejava.demonstration.transport.TypeBoiteVitesse;
 import com.udemy.decouvertejava.demonstration.transport.Vehicule;
-
+import com.udemy.decouvertejava.demonstration.Ville;
 import java.util.Objects;
 
 public class Voiture extends Vehicule implements com.udemy.decouvertejava.demonstration.Vidangeable
@@ -164,7 +164,7 @@ public class Voiture extends Vehicule implements com.udemy.decouvertejava.demons
 
 
 
-        com.udemy.decouvertejava.demonstration.Ville villeDeDestination = new com.udemy.decouvertejava.demonstration.Ville();
+        Ville villeDeDestination = new Ville();
         villeDeDestination.nom ="Godomey";
         return villeDeDestination;
     }
